@@ -1,0 +1,80 @@
+.approachWrapper{
+    min-height: 70vh;
+    background: #eee;
+    padding-block: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 5vw;
+    flex-wrap: wrap;
+    position: relative;
+}
+.approachContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline: 3vw;
+}
+.oa{
+    font-size: 4vw;
+}
+.rm{
+    color: #fff;
+    margin-top: 2.5vh;
+    background: #222;
+    text-transform: uppercase;
+    border-radius: 100px;
+    padding: 20px 70px 20px 30px;
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+.rm:hover{
+    margin-top: 2vh;
+    box-shadow: 0 6px 0 0 #fff,0 7px 0 0 #000 ;
+}
+.upArrow{
+    color: #000;
+    background: #fff;
+    padding: 5px;
+    border-radius: 100px;
+    font-size: 0;
+    position: absolute;
+    right: 25px;
+    transition: all 0.2s ease;
+}
+.rm:hover .upArrow{
+    font-size: 25px;
+    right: 10px;
+    padding: 10px;
+}
+.approachImg{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+.aboutImg{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.line{
+    position: absolute;
+    width: 70%;
+    height: 1px;
+    bottom: 2%;
+    left: 15%;
+    text-align: left;
+    background: lightgray;
+}
+@media screen and (max-width:1025px) {
+    .approachImg{
+        margin-top: 5vh;
+        width: 100%;
+        height: auto;
+    }
+}

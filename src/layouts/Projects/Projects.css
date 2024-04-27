@@ -1,0 +1,58 @@
+.projectsWrapper{
+    min-height: 100vh;
+    padding-block: 10vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20vh;
+}
+.projectAnchor{
+    width: 30%;
+}
+.projectHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-inline: 5vw;
+    width: 85%;
+}
+.projectHead p{
+    width: 50%;
+    font-size: 4vw;
+    text-align: left;
+    line-height: 1.2;
+}
+.moreProjects{
+    color: black;
+    padding: 20px 40px;
+    border: 1px solid #000;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+.moreProjects:hover{
+    background: #222;
+    color: #fff;
+}
+.arrowRight{
+    font-size: 20px;
+}
+.projectBox{
+    padding-inline: 5vw;
+    display: flex;
+    gap: 10px;
+    width: 70%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+}
+
+@media screen and (max-width: 850px) {
+    .projectBox{
+        width: 95%;
+    }
+}

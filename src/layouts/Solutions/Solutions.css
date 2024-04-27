@@ -1,0 +1,35 @@
+.solutions{
+    min-height: 90vh;
+    padding-inline: 5vw;
+    margin-top: 10vh;
+}
+.sol_head_wrapper{
+    text-align: left;
+}
+.sol_head{
+    font-weight: 600;
+    font-size: 4vw;
+    line-height: 2;
+}
+.sol_txt{
+    font-size: 20px;
+    width: 70%;
+    margin-bottom: 10vh;
+}
+.sol_cards_wrapper{
+    display: flex;
+    margin-top: 8vh;
+    gap: 10px;
+}
+@media screen and (max-width: 970px) {
+    .sol_cards_wrapper{
+        flex-wrap: wrap;
+    }
+    .sol_head{
+        font-size: 8vw;
+    }
+    .sol_txt{
+        font-size: 18px;
+        width: 90%;
+    }
+}

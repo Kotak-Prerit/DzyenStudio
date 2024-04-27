@@ -1,0 +1,137 @@
+.navbar {
+    height: 100px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 97.5%;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease-in-out;
+    z-index: 5;
+}
+
+.logo {
+    height: 40px;
+}
+
+.linksContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 25px;
+    cursor: pointer;
+}
+
+.links:hover .arrow {
+    transform: rotate(180deg);
+}
+
+.serviceLnk:hover .Services {
+    height: calc(97vh - 100px);
+    display: flex;
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+    z-index: 999;
+}
+
+.arrow {
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.contact {
+    color: #fff;
+    background: #000;
+    padding: 10px 25px;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.contact:hover {
+    transition: 0.3s ease;
+    border: 1px solid #000;
+    color: #000;
+    background: transparent;
+}
+
+.Services {
+    position: fixed;
+    top: 100px;
+    left: 1.5vw;
+    width: 97vw;
+    background: #333;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 0;
+    overflow-y: scroll;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+}
+
+.serviceTagWrapper {
+    width: 90%;
+    padding-inline: 20px;
+    margin-top: 5vh;
+}
+
+.serviceTag {
+    text-align: left;
+    background: linear-gradient(90deg, #ffd000, #eeff55);
+    padding: 5px 15px;
+    border-radius: 100px;
+    width: fit-content;
+    color: #000;
+    font-weight: 400;
+}
+
+.servicesWrapper {
+    width: 90%;
+    height: 85%;
+    display: flex;
+}
+
+.strategy,
+.design,
+.development {
+    width: 33.33%;
+    color: #fff;
+    margin-top: 5vh;
+}
+
+.strategyTxt,
+.designTxt,
+.devTxt {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+    .linksContainer {
+        display: none;
+    }
+
+    .navbar {
+        width: 95%;
+    }
+}
